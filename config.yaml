@@ -1,0 +1,13 @@
+data_path: "data/sonar.csv"
+baseline_model_output_path: "models"
+std_model_output_path: "models"
+
+seed: 42
+test_size: 0.3
+
+model:
+  units: 60
+
+train:
+  epochs: 100
+  batch_size: 5
