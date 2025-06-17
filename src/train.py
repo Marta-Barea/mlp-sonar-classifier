@@ -60,8 +60,9 @@ def train_model():
     os.makedirs(STD_MODEL_OUTPUT_PATH, exist_ok=True)
 
     joblib.dump(mlp_base, os.path.join(
-        BASELINE_MODEL_OUTPUT_PATH, 'mlp_base.pkl'))
-    joblib.dump(pipeline, os.path.join(STD_MODEL_OUTPUT_PATH, 'mlp_std.pkl'))
+        BASELINE_MODEL_OUTPUT_PATH, 'mlp_base.joblib'))
+    joblib.dump(pipeline, os.path.join(
+        STD_MODEL_OUTPUT_PATH, 'mlp_std.joblib'))
 
     print("\n✅ Training completed.")
 

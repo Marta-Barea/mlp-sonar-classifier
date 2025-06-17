@@ -8,8 +8,9 @@ from .config import BASELINE_MODEL_OUTPUT_PATH, STD_MODEL_OUTPUT_PATH
 def evaluate_model():
     X_train, X_test, y_train, y_test = load_data()
     base_mlp = joblib.load(os.path.join(
-        BASELINE_MODEL_OUTPUT_PATH, 'mlp_base.pkl'))
-    std_mlp = joblib.load(os.path.join(STD_MODEL_OUTPUT_PATH, 'mlp_std.pkl'))
+        BASELINE_MODEL_OUTPUT_PATH, 'mlp_base.joblib'))
+    std_mlp = joblib.load(os.path.join(
+        STD_MODEL_OUTPUT_PATH, 'mlp_std.joblib'))
 
     if not base_mlp or not std_mlp:
         print("❌ Model not found. Make sure to run src/train.py first.")
