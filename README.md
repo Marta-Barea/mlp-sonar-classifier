@@ -53,7 +53,7 @@ mlp-iris-classifier/
 ├── environment.yml      # Conda environment spec
 │
 ├── data/
-│   └── sonar.csv         # Sonar Dataset
+│   └── sonar.csv        # Sonar Dataset
 │
 ├── models/              # (Auto-created) Trained model & params
 │
